@@ -1,0 +1,34 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <title>vicki VR</title>
+
+</head>
+<body>
+<a-scene>
+    <a-entity environment="preset: moon; dressingAmount: 500; skyColor:indigo; groundColor:#d6b588;groundColor2:#f5f5dc"></a-entity>
+    <!--Musem Start-->
+    <a-cylinder id="floor" position="0 0 0" radius="7.5" height="0.1" src="images/wall.jpg"></a-cylinder>
+    <a-box id="wall1" position="0 1.473 4.907" scale="10 3 0.1"color="grey" ></a-box>
+    <a-box id="wall2" position="0 1.473 -4.907" scale="10 3 0.1"color="grey" ></a-box>
+    <a-box id="wall3" position="5.049 1.454 -0.008" rotation="0 -90 0"scale="10 3 0.1"color="grey" ></a-box>
+    <a-box id="wall4" position="-5.049 1.454 -0.008" rotation="0 -90 0"  scale="10 3 0.1"color="grey"></a-box>
+
+
+<!--roof-->
+    <a-cylinder id="triangle_front" segments-radial="3" position="0 3.874 4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" color="grey"></a-cylinder>
+    <a-cylinder id="triangle_back" segments-radial="3" position="0 3.874 -4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" color="grey"></a-cylinder>
+    <a-box id="roof_right" position="2.580 4.328 0" rotation="28.433 90 0" scale="10.931 0.20 6.110" src="silver"></a-box>
+    <a-box id="roof_left" position="-2.599 4.321 -0.017" rotation="28.433 -90 0" scale="10.931 0.20 6.130" src="silver"></a-box>
+
+
+</a-scene>
+</body>
+</html> 
